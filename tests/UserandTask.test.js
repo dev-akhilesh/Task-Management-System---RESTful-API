@@ -24,7 +24,7 @@ beforeAll(async () => {
   process.env.REFRESH_JWT_SECRET = "ronaldo"; 
 
   await mongoose.connect(
-    "mongodb+srv://akhileshtakawale703:akhileshtakawale703@cluster0.47wrssa.mongodb.net/taskmanagementapp?retryWrites=true&w=majority"
+    process.env.MONGODB_URI
   );
 });
 
